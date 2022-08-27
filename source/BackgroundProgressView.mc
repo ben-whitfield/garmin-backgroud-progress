@@ -3,6 +3,9 @@ import Toybox.Lang;
 import Toybox.System;
 import Toybox.WatchUi;
 
+import Toybox.ActivityMonitor;
+// import Toybox.Time.Gregorian;
+
 class BackgroundProgressView extends WatchUi.WatchFace {
 
     function initialize() {
@@ -23,19 +26,9 @@ class BackgroundProgressView extends WatchUi.WatchFace {
     // Update the view
     function onUpdate(dc as Dc) as Void {
         var myStats = System.getSystemStats();
-
-        // Get and show the current time
-        var clockTime = System.getClockTime();
-        var timeString = Lang.format("$1$:$2$", [clockTime.hour, clockTime.min.format("%02d")]);
-        var view = View.findDrawableById("TimeLabel") as Text;
-        view.setText(timeString);
-
-        // Get and show the Battery
-        System.println(myStats.battery);
-        var batteryValue = format(myStats.battery as Lang.String) as Lang.String; 
-        var batteryText = View.findDrawableById("BatteryDisplay") as Text;
-        System.println(batteryValue);
-        batteryText.setText(batteryValue);
+        setClockDisplay();
+        setBatteryDisplay(myStats.battery);
+        setStepCountDisplay();
 
         // Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);
@@ -53,6 +46,27 @@ class BackgroundProgressView extends WatchUi.WatchFace {
 
     // Terminate any active timers and prepare for slow updates.
     function onEnterSleep() as Void {
+    }
+
+    private function setClockDisplay() {
+    	var clockTime = System.getClockTime();
+        var timeString = Lang.format("$1$:$2$", [clockTime.hour, clockTime.min.format("%02d")]);
+	
+	    // This	will break if it doesn't match your drawable's id!
+        var view = View.findDrawableById("TimeDisplay") as Text;
+	    view.setText(timeString);
+    }
+
+    private function setBatteryDisplay(battery) {
+    	// var battery = Sys.getSystemStats().battery;				
+	    var batteryDisplay = View.findDrawableById("BatteryDisplay");      
+	    batteryDisplay.setText(battery.format("%d")+"%");	
+    }
+    
+    private function setStepCountDisplay() {
+    	var stepCount = ActivityMonitor.getInfo().steps.toString();		
+	    var stepCountDisplay = View.findDrawableById("StepCountDisplay");      
+	    stepCountDisplay.setText(stepCount);		
     }
 
 }

@@ -1,51 +1,58 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <debugInfo>
-    <manifest filename="D:\Garmin\BackgroundProgress\BackgroundProgress\manifest.xml"/>
+    <manifest filename="D:\Garmin\BackgroundProgress\manifest.xml"/>
     <pcToLineNum>
-        <entry filename="D:\\Garmin\\BackgroundProgress\\BackgroundProgress\\source\\BackgroundProgressApp.mc" id="1" lineNum="7" parent="globals/BackgroundProgressApp" pc="268435456" symbol="initialize"/>
-        <entry filename="D:\\Garmin\\BackgroundProgress\\BackgroundProgress\\source\\BackgroundProgressApp.mc" id="1" lineNum="8" parent="globals/BackgroundProgressApp" pc="268435460" symbol="initialize"/>
-        <entry filename="D:\\Garmin\\BackgroundProgress\\BackgroundProgress\\source\\BackgroundProgressApp.mc" id="2" lineNum="12" parent="globals/BackgroundProgressApp" pc="268435479" symbol="onStart"/>
-        <entry filename="D:\\Garmin\\BackgroundProgress\\BackgroundProgress\\source\\BackgroundProgressApp.mc" id="3" lineNum="16" parent="globals/BackgroundProgressApp" pc="268435484" symbol="onStop"/>
-        <entry filename="D:\\Garmin\\BackgroundProgress\\BackgroundProgress\\source\\BackgroundProgressApp.mc" id="4" lineNum="20" parent="globals/BackgroundProgressApp" pc="268435489" symbol="getInitialView"/>
-        <entry filename="D:\\Garmin\\BackgroundProgress\\BackgroundProgress\\source\\BackgroundProgressApp.mc" id="4" lineNum="21" parent="globals/BackgroundProgressApp" pc="268435493" symbol="getInitialView"/>
-        <entry filename="D:\\Garmin\\BackgroundProgress\\BackgroundProgress\\source\\BackgroundProgressApp.mc" id="5" lineNum="5" parent="globals/BackgroundProgressApp" pc="268436281" symbol="&lt;init&gt;"/>
-        <entry filename="D:\\Garmin\\BackgroundProgress\\BackgroundProgress\\source\\BackgroundProgressApp.mc" id="5" lineNum="5" parent="globals/BackgroundProgressApp" pc="268436281" symbol="&lt;init&gt;"/>
-        <entry filename="D:\\Garmin\\BackgroundProgress\\BackgroundProgress\\source\\BackgroundProgressApp.mc" id="6" lineNum="26" parent="globals" pc="268435531" symbol="getApp"/>
-        <entry filename="D:\\Garmin\\BackgroundProgress\\BackgroundProgress\\source\\BackgroundProgressApp.mc" id="6" lineNum="27" parent="globals" pc="268435543" symbol="getApp"/>
-        <entry filename="D:\\Garmin\\BackgroundProgress\\BackgroundProgress\\source\\BackgroundProgressView.mc" id="8" lineNum="8" parent="globals/BackgroundProgressView" pc="268435560" symbol="initialize"/>
-        <entry filename="D:\\Garmin\\BackgroundProgress\\BackgroundProgress\\source\\BackgroundProgressView.mc" id="8" lineNum="9" parent="globals/BackgroundProgressView" pc="268435564" symbol="initialize"/>
-        <entry filename="D:\\Garmin\\BackgroundProgress\\BackgroundProgress\\source\\BackgroundProgressView.mc" id="9" lineNum="13" parent="globals/BackgroundProgressView" pc="268435583" symbol="onLayout"/>
-        <entry filename="D:\\Garmin\\BackgroundProgress\\BackgroundProgress\\source\\BackgroundProgressView.mc" id="9" lineNum="14" parent="globals/BackgroundProgressView" pc="268435587" symbol="onLayout"/>
-        <entry filename="D:\\Garmin\\BackgroundProgress\\BackgroundProgress\\source\\BackgroundProgressView.mc" id="10" lineNum="20" parent="globals/BackgroundProgressView" pc="268435625" symbol="onShow"/>
-        <entry filename="D:\\Garmin\\BackgroundProgress\\BackgroundProgress\\source\\BackgroundProgressView.mc" id="11" lineNum="24" parent="globals/BackgroundProgressView" pc="268435630" symbol="onUpdate"/>
-        <entry filename="D:\\Garmin\\BackgroundProgress\\BackgroundProgress\\source\\BackgroundProgressView.mc" id="11" lineNum="25" parent="globals/BackgroundProgressView" pc="268435634" symbol="onUpdate"/>
-        <entry filename="D:\\Garmin\\BackgroundProgress\\BackgroundProgress\\source\\BackgroundProgressView.mc" id="11" lineNum="28" parent="globals/BackgroundProgressView" pc="268435651" symbol="onUpdate"/>
-        <entry filename="D:\\Garmin\\BackgroundProgress\\BackgroundProgress\\source\\BackgroundProgressView.mc" id="11" lineNum="29" parent="globals/BackgroundProgressView" pc="268435668" symbol="onUpdate"/>
-        <entry filename="D:\\Garmin\\BackgroundProgress\\BackgroundProgress\\source\\BackgroundProgressView.mc" id="11" lineNum="30" parent="globals/BackgroundProgressView" pc="268435742" symbol="onUpdate"/>
-        <entry filename="D:\\Garmin\\BackgroundProgress\\BackgroundProgress\\source\\BackgroundProgressView.mc" id="11" lineNum="31" parent="globals/BackgroundProgressView" pc="268435766" symbol="onUpdate"/>
-        <entry filename="D:\\Garmin\\BackgroundProgress\\BackgroundProgress\\source\\BackgroundProgressView.mc" id="11" lineNum="34" parent="globals/BackgroundProgressView" pc="268435780" symbol="onUpdate"/>
-        <entry filename="D:\\Garmin\\BackgroundProgress\\BackgroundProgress\\source\\BackgroundProgressView.mc" id="11" lineNum="35" parent="globals/BackgroundProgressView" pc="268435804" symbol="onUpdate"/>
-        <entry filename="D:\\Garmin\\BackgroundProgress\\BackgroundProgress\\source\\BackgroundProgressView.mc" id="11" lineNum="36" parent="globals/BackgroundProgressView" pc="268435825" symbol="onUpdate"/>
-        <entry filename="D:\\Garmin\\BackgroundProgress\\BackgroundProgress\\source\\BackgroundProgressView.mc" id="11" lineNum="37" parent="globals/BackgroundProgressView" pc="268435849" symbol="onUpdate"/>
-        <entry filename="D:\\Garmin\\BackgroundProgress\\BackgroundProgress\\source\\BackgroundProgressView.mc" id="11" lineNum="38" parent="globals/BackgroundProgressView" pc="268435867" symbol="onUpdate"/>
-        <entry filename="D:\\Garmin\\BackgroundProgress\\BackgroundProgress\\source\\BackgroundProgressView.mc" id="11" lineNum="41" parent="globals/BackgroundProgressView" pc="268435881" symbol="onUpdate"/>
-        <entry filename="D:\\Garmin\\BackgroundProgress\\BackgroundProgress\\source\\BackgroundProgressView.mc" id="12" lineNum="47" parent="globals/BackgroundProgressView" pc="268435902" symbol="onHide"/>
-        <entry filename="D:\\Garmin\\BackgroundProgress\\BackgroundProgress\\source\\BackgroundProgressView.mc" id="13" lineNum="51" parent="globals/BackgroundProgressView" pc="268435907" symbol="onExitSleep"/>
-        <entry filename="D:\\Garmin\\BackgroundProgress\\BackgroundProgress\\source\\BackgroundProgressView.mc" id="14" lineNum="55" parent="globals/BackgroundProgressView" pc="268435912" symbol="onEnterSleep"/>
-        <entry filename="D:\\Garmin\\BackgroundProgress\\BackgroundProgress\\source\\BackgroundProgressView.mc" id="15" lineNum="6" parent="globals/BackgroundProgressView" pc="268436330" symbol="&lt;init&gt;"/>
-        <entry filename="D:\\Garmin\\BackgroundProgress\\BackgroundProgress\\source\\BackgroundProgressView.mc" id="15" lineNum="6" parent="globals/BackgroundProgressView" pc="268436330" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="17" lineNum="2" parent="globals/Rez/Drawables" pc="268436324" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="18" lineNum="6" parent="globals/Rez/Fonts" pc="268436326" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="19" lineNum="8" parent="globals/Rez/JsonData" pc="268436328" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="20" lineNum="17" parent="globals/Rez/Layouts" pc="268435917" symbol="WatchFace"/>
-        <entry filename="Rez" id="20" lineNum="19" parent="globals/Rez/Layouts" pc="268435929" symbol="WatchFace"/>
-        <entry filename="Rez" id="20" lineNum="20" parent="globals/Rez/Layouts" pc="268436092" symbol="WatchFace"/>
-        <entry filename="Rez" id="20" lineNum="22" parent="globals/Rez/Layouts" pc="268436252" symbol="WatchFace"/>
-        <entry filename="Rez" id="21" lineNum="10" parent="globals/Rez/Layouts" pc="268436327" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="22" lineNum="27" parent="globals/Rez/Menus" pc="268436325" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="23" lineNum="29" parent="globals/Rez/Strings" pc="268436329" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="24" lineNum="1" parent="globals/Rez" pc="268436300" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="24" lineNum="1" parent="globals/Rez" pc="268436300" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\Garmin\\BackgroundProgress\\source\\BackgroundProgressView.mc" id="1" lineNum="11" parent="globals/BackgroundProgressView" pc="268435456" symbol="initialize"/>
+        <entry filename="D:\\Garmin\\BackgroundProgress\\source\\BackgroundProgressView.mc" id="1" lineNum="12" parent="globals/BackgroundProgressView" pc="268435460" symbol="initialize"/>
+        <entry filename="D:\\Garmin\\BackgroundProgress\\source\\BackgroundProgressView.mc" id="2" lineNum="16" parent="globals/BackgroundProgressView" pc="268435479" symbol="onLayout"/>
+        <entry filename="D:\\Garmin\\BackgroundProgress\\source\\BackgroundProgressView.mc" id="2" lineNum="17" parent="globals/BackgroundProgressView" pc="268435483" symbol="onLayout"/>
+        <entry filename="D:\\Garmin\\BackgroundProgress\\source\\BackgroundProgressView.mc" id="3" lineNum="23" parent="globals/BackgroundProgressView" pc="268435521" symbol="onShow"/>
+        <entry filename="D:\\Garmin\\BackgroundProgress\\source\\BackgroundProgressView.mc" id="4" lineNum="27" parent="globals/BackgroundProgressView" pc="268435526" symbol="onUpdate"/>
+        <entry filename="D:\\Garmin\\BackgroundProgress\\source\\BackgroundProgressView.mc" id="4" lineNum="28" parent="globals/BackgroundProgressView" pc="268435530" symbol="onUpdate"/>
+        <entry filename="D:\\Garmin\\BackgroundProgress\\source\\BackgroundProgressView.mc" id="4" lineNum="29" parent="globals/BackgroundProgressView" pc="268435547" symbol="onUpdate"/>
+        <entry filename="D:\\Garmin\\BackgroundProgress\\source\\BackgroundProgressView.mc" id="4" lineNum="30" parent="globals/BackgroundProgressView" pc="268435559" symbol="onUpdate"/>
+        <entry filename="D:\\Garmin\\BackgroundProgress\\source\\BackgroundProgressView.mc" id="4" lineNum="31" parent="globals/BackgroundProgressView" pc="268435579" symbol="onUpdate"/>
+        <entry filename="D:\\Garmin\\BackgroundProgress\\source\\BackgroundProgressView.mc" id="4" lineNum="34" parent="globals/BackgroundProgressView" pc="268435591" symbol="onUpdate"/>
+        <entry filename="D:\\Garmin\\BackgroundProgress\\source\\BackgroundProgressView.mc" id="5" lineNum="40" parent="globals/BackgroundProgressView" pc="268435612" symbol="onHide"/>
+        <entry filename="D:\\Garmin\\BackgroundProgress\\source\\BackgroundProgressView.mc" id="6" lineNum="44" parent="globals/BackgroundProgressView" pc="268435617" symbol="onExitSleep"/>
+        <entry filename="D:\\Garmin\\BackgroundProgress\\source\\BackgroundProgressView.mc" id="7" lineNum="48" parent="globals/BackgroundProgressView" pc="268435622" symbol="onEnterSleep"/>
+        <entry filename="D:\\Garmin\\BackgroundProgress\\source\\BackgroundProgressView.mc" id="8" lineNum="51" parent="globals/BackgroundProgressView" pc="268435627" symbol="&lt;globals/BackgroundProgressView/&lt;&gt;setClockDisplay&gt;"/>
+        <entry filename="D:\\Garmin\\BackgroundProgress\\source\\BackgroundProgressView.mc" id="8" lineNum="52" parent="globals/BackgroundProgressView" pc="268435631" symbol="&lt;globals/BackgroundProgressView/&lt;&gt;setClockDisplay&gt;"/>
+        <entry filename="D:\\Garmin\\BackgroundProgress\\source\\BackgroundProgressView.mc" id="8" lineNum="53" parent="globals/BackgroundProgressView" pc="268435648" symbol="&lt;globals/BackgroundProgressView/&lt;&gt;setClockDisplay&gt;"/>
+        <entry filename="D:\\Garmin\\BackgroundProgress\\source\\BackgroundProgressView.mc" id="8" lineNum="56" parent="globals/BackgroundProgressView" pc="268435722" symbol="&lt;globals/BackgroundProgressView/&lt;&gt;setClockDisplay&gt;"/>
+        <entry filename="D:\\Garmin\\BackgroundProgress\\source\\BackgroundProgressView.mc" id="8" lineNum="57" parent="globals/BackgroundProgressView" pc="268435746" symbol="&lt;globals/BackgroundProgressView/&lt;&gt;setClockDisplay&gt;"/>
+        <entry filename="D:\\Garmin\\BackgroundProgress\\source\\BackgroundProgressView.mc" id="9" lineNum="60" parent="globals/BackgroundProgressView" pc="268435761" symbol="&lt;globals/BackgroundProgressView/&lt;&gt;setBatteryDisplay&gt;"/>
+        <entry filename="D:\\Garmin\\BackgroundProgress\\source\\BackgroundProgressView.mc" id="9" lineNum="62" parent="globals/BackgroundProgressView" pc="268435765" symbol="&lt;globals/BackgroundProgressView/&lt;&gt;setBatteryDisplay&gt;"/>
+        <entry filename="D:\\Garmin\\BackgroundProgress\\source\\BackgroundProgressView.mc" id="9" lineNum="63" parent="globals/BackgroundProgressView" pc="268435789" symbol="&lt;globals/BackgroundProgressView/&lt;&gt;setBatteryDisplay&gt;"/>
+        <entry filename="D:\\Garmin\\BackgroundProgress\\source\\BackgroundProgressView.mc" id="10" lineNum="66" parent="globals/BackgroundProgressView" pc="268435824" symbol="&lt;globals/BackgroundProgressView/&lt;&gt;setStepCountDisplay&gt;"/>
+        <entry filename="D:\\Garmin\\BackgroundProgress\\source\\BackgroundProgressView.mc" id="10" lineNum="67" parent="globals/BackgroundProgressView" pc="268435828" symbol="&lt;globals/BackgroundProgressView/&lt;&gt;setStepCountDisplay&gt;"/>
+        <entry filename="D:\\Garmin\\BackgroundProgress\\source\\BackgroundProgressView.mc" id="10" lineNum="68" parent="globals/BackgroundProgressView" pc="268435860" symbol="&lt;globals/BackgroundProgressView/&lt;&gt;setStepCountDisplay&gt;"/>
+        <entry filename="D:\\Garmin\\BackgroundProgress\\source\\BackgroundProgressView.mc" id="10" lineNum="69" parent="globals/BackgroundProgressView" pc="268435884" symbol="&lt;globals/BackgroundProgressView/&lt;&gt;setStepCountDisplay&gt;"/>
+        <entry filename="D:\\Garmin\\BackgroundProgress\\source\\BackgroundProgressView.mc" id="11" lineNum="9" parent="globals/BackgroundProgressView" pc="268436632" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\Garmin\\BackgroundProgress\\source\\BackgroundProgressView.mc" id="11" lineNum="9" parent="globals/BackgroundProgressView" pc="268436632" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\Garmin\\BackgroundProgress\\source\\BackgroundProgressApp.mc" id="13" lineNum="7" parent="globals/BackgroundProgressApp" pc="268435899" symbol="initialize"/>
+        <entry filename="D:\\Garmin\\BackgroundProgress\\source\\BackgroundProgressApp.mc" id="13" lineNum="8" parent="globals/BackgroundProgressApp" pc="268435903" symbol="initialize"/>
+        <entry filename="D:\\Garmin\\BackgroundProgress\\source\\BackgroundProgressApp.mc" id="14" lineNum="12" parent="globals/BackgroundProgressApp" pc="268435922" symbol="onStart"/>
+        <entry filename="D:\\Garmin\\BackgroundProgress\\source\\BackgroundProgressApp.mc" id="15" lineNum="16" parent="globals/BackgroundProgressApp" pc="268435927" symbol="onStop"/>
+        <entry filename="D:\\Garmin\\BackgroundProgress\\source\\BackgroundProgressApp.mc" id="16" lineNum="20" parent="globals/BackgroundProgressApp" pc="268435932" symbol="getInitialView"/>
+        <entry filename="D:\\Garmin\\BackgroundProgress\\source\\BackgroundProgressApp.mc" id="16" lineNum="21" parent="globals/BackgroundProgressApp" pc="268435936" symbol="getInitialView"/>
+        <entry filename="D:\\Garmin\\BackgroundProgress\\source\\BackgroundProgressApp.mc" id="17" lineNum="5" parent="globals/BackgroundProgressApp" pc="268436583" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\Garmin\\BackgroundProgress\\source\\BackgroundProgressApp.mc" id="17" lineNum="5" parent="globals/BackgroundProgressApp" pc="268436583" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\Garmin\\BackgroundProgress\\source\\BackgroundProgressApp.mc" id="18" lineNum="26" parent="globals" pc="268435974" symbol="getApp"/>
+        <entry filename="D:\\Garmin\\BackgroundProgress\\source\\BackgroundProgressApp.mc" id="18" lineNum="27" parent="globals" pc="268435986" symbol="getApp"/>
+        <entry filename="Rez" id="20" lineNum="2" parent="globals/Rez/Drawables" pc="268436626" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="21" lineNum="6" parent="globals/Rez/Fonts" pc="268436628" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="22" lineNum="8" parent="globals/Rez/JsonData" pc="268436630" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="23" lineNum="17" parent="globals/Rez/Layouts" pc="268436003" symbol="WatchFace"/>
+        <entry filename="Rez" id="23" lineNum="19" parent="globals/Rez/Layouts" pc="268436015" symbol="WatchFace"/>
+        <entry filename="Rez" id="23" lineNum="20" parent="globals/Rez/Layouts" pc="268436178" symbol="WatchFace"/>
+        <entry filename="Rez" id="23" lineNum="21" parent="globals/Rez/Layouts" pc="268436361" symbol="WatchFace"/>
+        <entry filename="Rez" id="23" lineNum="23" parent="globals/Rez/Layouts" pc="268436544" symbol="WatchFace"/>
+        <entry filename="Rez" id="24" lineNum="10" parent="globals/Rez/Layouts" pc="268436629" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="25" lineNum="28" parent="globals/Rez/Menus" pc="268436627" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="26" lineNum="30" parent="globals/Rez/Strings" pc="268436631" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="27" lineNum="1" parent="globals/Rez" pc="268436602" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="27" lineNum="1" parent="globals/Rez" pc="268436602" symbol="&lt;init&gt;"/>
     </pcToLineNum>
     <symbolTable>
         <entry id="8388639" module="true" symbol="Graphics"/>
@@ -54,6 +61,7 @@
         <entry id="4" module="true" symbol="globals/Rez/Menus"/>
         <entry field="true" id="8388611" module="true" symbol="Toybox"/>
         <entry field="true" id="14" symbol="AppName"/>
+        <entry id="8388633" module="true" symbol="ActivityMonitor"/>
         <entry id="8" module="true" symbol="globals/Rez/Strings"/>
         <entry id="8388772" module="true" object="true" symbol="Fonts"/>
         <entry id="8388648" module="true" symbol="WatchUi"/>
@@ -62,7 +70,7 @@
         <entry id="8389375" method="true" object="true" symbol="WatchFace"/>
         <entry field="true" id="8389065" symbol="locY"/>
         <entry field="true" id="8389064" symbol="locX"/>
-        <entry id="9" object="true" symbol="BackgroundProgressApp"/>
+        <entry id="10" object="true" symbol="BackgroundProgressApp"/>
         <entry id="8388771" module="true" object="true" symbol="Drawables"/>
         <entry id="8389348" symbol="font"/>
         <entry id="12" module="true" symbol="Menus"/>
@@ -72,16 +80,19 @@
         <entry id="8389376" method="true" symbol="onEnterSleep"/>
         <entry field="true" id="8389063" symbol="identifier"/>
         <entry id="8389349" symbol="justification"/>
+        <entry id="16" method="true" symbol="&lt;globals/BackgroundProgressView/&lt;&gt;setBatteryDisplay&gt;"/>
         <entry id="7" module="true" symbol="globals/Rez/JsonData"/>
         <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
         <entry id="8389377" method="true" symbol="onExitSleep"/>
         <entry id="8388644" module="true" symbol="System"/>
         <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry id="15" method="true" symbol="&lt;globals/BackgroundProgressView/&lt;&gt;setClockDisplay&gt;"/>
         <entry id="8388640" module="true" symbol="Lang"/>
         <entry id="8390088" module="true" object="true" symbol="JsonData"/>
         <entry field="true" id="13" symbol="LauncherIcon"/>
         <entry id="8388610" symbol="statics"/>
         <entry id="8389123" method="true" symbol="onShow"/>
+        <entry id="17" method="true" symbol="&lt;globals/BackgroundProgressView/&lt;&gt;setStepCountDisplay&gt;"/>
         <entry id="8389350" module="true" symbol="globals"/>
         <entry id="8388770" module="true" object="true" symbol="Strings"/>
         <entry id="8388702" method="true" symbol="initialize"/>
@@ -90,25 +101,28 @@
         <entry id="8389281" method="true" symbol="onStop"/>
         <entry id="8389347" symbol="color"/>
         <entry id="11" module="true" symbol="Layouts"/>
-        <entry id="10" object="true" symbol="BackgroundProgressView"/>
+        <entry id="9" object="true" symbol="BackgroundProgressView"/>
         <entry id="5" module="true" symbol="globals/Rez/Fonts"/>
         <entry id="8389125" method="true" symbol="onHide"/>
         <entry id="8388635" module="true" symbol="Application"/>
     </symbolTable>
     <localVars>
-        <entry arg="true" endPc="268435483" name="state" stackId="1" startPc="268435479"/>
-        <entry arg="true" endPc="268435488" name="state" stackId="1" startPc="268435484"/>
-        <entry arg="true" endPc="268435624" name="dc" stackId="1" startPc="268435583"/>
-        <entry endPc="268435900" name="view" stackId="5" startPc="268435634"/>
-        <entry endPc="268435900" name="myStats" stackId="2" startPc="268435634"/>
-        <entry endPc="268435900" name="timeString" stackId="4" startPc="268435634"/>
-        <entry endPc="268435900" name="clockTime" stackId="3" startPc="268435634"/>
-        <entry endPc="268435900" name="batteryValue" stackId="6" startPc="268435634"/>
-        <entry endPc="268435900" name="batteryText" stackId="7" startPc="268435634"/>
-        <entry arg="true" endPc="268435901" name="dc" stackId="1" startPc="268435630"/>
-        <entry endPc="268436278" name="rez_cmp_local_text_BatteryDisplay" stackId="3" startPc="268435929"/>
-        <entry endPc="268436278" name="rez_cmp_local_text_TimeLabel" stackId="2" startPc="268435929"/>
-        <entry arg="true" endPc="268436279" name="dc" stackId="1" startPc="268435917"/>
+        <entry arg="true" endPc="268435520" name="dc" stackId="1" startPc="268435479"/>
+        <entry endPc="268435610" name="myStats" stackId="2" startPc="268435530"/>
+        <entry arg="true" endPc="268435611" name="dc" stackId="1" startPc="268435526"/>
+        <entry endPc="268435759" name="view" stackId="3" startPc="268435631"/>
+        <entry endPc="268435759" name="timeString" stackId="2" startPc="268435631"/>
+        <entry endPc="268435759" name="clockTime" stackId="1" startPc="268435631"/>
+        <entry endPc="268435822" name="batteryDisplay" stackId="2" startPc="268435765"/>
+        <entry arg="true" endPc="268435823" name="battery" stackId="1" startPc="268435761"/>
+        <entry endPc="268435897" name="stepCountDisplay" stackId="2" startPc="268435828"/>
+        <entry endPc="268435897" name="stepCount" stackId="1" startPc="268435828"/>
+        <entry arg="true" endPc="268435926" name="state" stackId="1" startPc="268435922"/>
+        <entry arg="true" endPc="268435931" name="state" stackId="1" startPc="268435927"/>
+        <entry endPc="268436580" name="rez_cmp_local_text_BatteryDisplay" stackId="3" startPc="268436015"/>
+        <entry endPc="268436580" name="rez_cmp_local_text_StepCountDisplay" stackId="4" startPc="268436015"/>
+        <entry endPc="268436580" name="rez_cmp_local_text_TimeDisplay" stackId="2" startPc="268436015"/>
+        <entry arg="true" endPc="268436581" name="dc" stackId="1" startPc="268436003"/>
     </localVars>
     <annotations>
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
@@ -127,75 +141,85 @@
         <dataEntry label="globals/BackgroundProgressView" offset="518" parentId="globals" symbolId="BackgroundProgressView" type="class"/>
     </dataEntryOffsetMappings>
     <functions>
-        <functionEntry accessMode="public" endPc="268435478" name="initialize" parent="BackgroundProgressApp" startPc="268435456">
+        <functionEntry accessMode="public" endPc="268435478" name="initialize" parent="BackgroundProgressView" startPc="268435456">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435483" name="onStart" parent="BackgroundProgressApp" startPc="268435479">
+        <functionEntry accessMode="public" endPc="268435520" name="onLayout" parent="BackgroundProgressView" startPc="268435479">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435525" name="onShow" parent="BackgroundProgressView" startPc="268435521">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435611" name="onUpdate" parent="BackgroundProgressView" startPc="268435526">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435616" name="onHide" parent="BackgroundProgressView" startPc="268435612">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435621" name="onExitSleep" parent="BackgroundProgressView" startPc="268435617">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435626" name="onEnterSleep" parent="BackgroundProgressView" startPc="268435622">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268435760" name="&lt;globals/BackgroundProgressView/&lt;&gt;setClockDisplay&gt;" parent="BackgroundProgressView" startPc="268435627">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268435823" name="&lt;globals/BackgroundProgressView/&lt;&gt;setBatteryDisplay&gt;" parent="BackgroundProgressView" startPc="268435761">
+            <param id="battery"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268435898" name="&lt;globals/BackgroundProgressView/&lt;&gt;setStepCountDisplay&gt;" parent="BackgroundProgressView" startPc="268435824">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268436650" name="&lt;init&gt;" parent="BackgroundProgressView" startPc="268436632">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435921" name="initialize" parent="BackgroundProgressApp" startPc="268435899">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435926" name="onStart" parent="BackgroundProgressApp" startPc="268435922">
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435488" name="onStop" parent="BackgroundProgressApp" startPc="268435484">
+        <functionEntry accessMode="public" endPc="268435931" name="onStop" parent="BackgroundProgressApp" startPc="268435927">
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435530" name="getInitialView" parent="BackgroundProgressApp" startPc="268435489">
+        <functionEntry accessMode="public" endPc="268435973" name="getInitialView" parent="BackgroundProgressApp" startPc="268435932">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436299" name="&lt;init&gt;" parent="BackgroundProgressApp" startPc="268436281">
+        <functionEntry accessMode="protected" endPc="268436601" name="&lt;init&gt;" parent="BackgroundProgressApp" startPc="268436583">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435559" name="getApp" startPc="268435531">
+        <functionEntry accessMode="public" endPc="268436002" name="getApp" startPc="268435974">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435582" name="initialize" parent="BackgroundProgressView" startPc="268435560">
+        <functionEntry accessMode="protected" endPc="268436626" name="&lt;init&gt;" parent="Drawables" startPc="268436626">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435624" name="onLayout" parent="BackgroundProgressView" startPc="268435583">
+        <functionEntry accessMode="protected" endPc="268436628" name="&lt;init&gt;" parent="Fonts" startPc="268436628">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268436630" name="&lt;init&gt;" parent="JsonData" startPc="268436630">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436581" name="WatchFace" parent="Layouts" startPc="268436003">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435629" name="onShow" parent="BackgroundProgressView" startPc="268435625">
+        <functionEntry accessMode="protected" endPc="268436629" name="&lt;init&gt;" parent="Layouts" startPc="268436629">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435901" name="onUpdate" parent="BackgroundProgressView" startPc="268435630">
-            <param id="dc"/>
+        <functionEntry accessMode="protected" endPc="268436627" name="&lt;init&gt;" parent="Menus" startPc="268436627">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435906" name="onHide" parent="BackgroundProgressView" startPc="268435902">
+        <functionEntry accessMode="protected" endPc="268436631" name="&lt;init&gt;" parent="Strings" startPc="268436631">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435911" name="onExitSleep" parent="BackgroundProgressView" startPc="268435907">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268435916" name="onEnterSleep" parent="BackgroundProgressView" startPc="268435912">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436348" name="&lt;init&gt;" parent="BackgroundProgressView" startPc="268436330">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436324" name="&lt;init&gt;" parent="Drawables" startPc="268436324">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436326" name="&lt;init&gt;" parent="Fonts" startPc="268436326">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436328" name="&lt;init&gt;" parent="JsonData" startPc="268436328">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268436279" name="WatchFace" parent="Layouts" startPc="268435917">
-            <param id="dc"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436327" name="&lt;init&gt;" parent="Layouts" startPc="268436327">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436325" name="&lt;init&gt;" parent="Menus" startPc="268436325">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436329" name="&lt;init&gt;" parent="Strings" startPc="268436329">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436323" name="&lt;init&gt;" parent="Rez" startPc="268436300">
+        <functionEntry accessMode="protected" endPc="268436625" name="&lt;init&gt;" parent="Rez" startPc="268436602">
             <documentation/>
         </functionEntry>
     </functions>
