@@ -23,6 +23,47 @@ class BackgroundProgressView extends WatchUi.WatchFace {
 
     // Update the view
     function onUpdate(dc as Dc) as Void {
+        
+        // Call the parent onUpdate function to redraw the layout
+        View.onUpdate(dc);
+        dc.clear();
+    	dc.setColor(Graphics.COLOR_WHITE,Graphics.COLOR_TRANSPARENT);
+    	dc.drawRectangle(50,50,14,14);
+    	dc.fillRectangle(50,100,14,14);
+        drawProgressCircle(dc);
+        setTimeLabel();
+    }
+
+    // Called when this View is removed from the screen. Save the
+    // state of this View here. This includes freeing resources from
+    // memory.
+    function onHide() as Void {
+    }
+
+    // The user has just looked at their watch. Timers and animations may be started here.
+    function onExitSleep() as Void {
+    }
+
+    // Terminate any active timers and prepare for slow updates.
+    function onEnterSleep() as Void {
+    }
+
+    // Create a method to get the SensorHistoryIterator object
+    function getIterator() {
+        // Check device for SensorHistory compatibility
+        if ((Toybox has :SensorHistory) && (Toybox.SensorHistory has :getBodyBatteryHistory)) {
+            // Set up the method with parameters
+            return Toybox.SensorHistory.getBodyBatteryHistory({});
+        }
+        return null;
+    }
+
+    private function drawProgressCircle(dc) {
+        dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_RED);
+        dc.fillRectangle(100, 100, 100, 100);
+    }
+
+    private function setTimeLabel() {
         // Get the current time and format it correctly
         var timeFormat = "$1$:$2$";
         var clockTime = System.getClockTime();
@@ -43,29 +84,36 @@ class BackgroundProgressView extends WatchUi.WatchFace {
         var view = View.findDrawableById("TimeLabel") as Text;
         view.setColor(getApp().getProperty("ForegroundColor") as Number);
         view.setText(timeString);
-
-        
-
-        // Call the parent onUpdate function to redraw the layout
-        View.onUpdate(dc);
-        dc.clear();
-    	dc.setColor(Graphics.COLOR_WHITE,Graphics.COLOR_TRANSPARENT);
-    	dc.drawRectangle(50,50,14,14);
-    	dc.fillRectangle(50,100,14,14);
     }
 
-    // Called when this View is removed from the screen. Save the
-    // state of this View here. This includes freeing resources from
-    // memory.
-    function onHide() as Void {
-    }
+    // private function setBatteryDisplay() {
+    // 	var battery = System.getSystemStats().battery;				
+	//     var batteryDisplay = View.findDrawableById("BatteryDisplay");      
+	//     batteryDisplay.setText(battery.format("%d")+"%");	
+    // }
 
-    // The user has just looked at their watch. Timers and animations may be started here.
-    function onExitSleep() as Void {
-    }
+    // private function setBodyBatteryDisplay() {
+    //     // get the body battery iterator object
+    //     var bbIterator = getIterator();
+    //     var sample = bbIterator.next();
+    //     while (sample != null) {  
+    // 	    var bBatteryDisplay = View.findDrawableById("BBatteryDisplay");      
+	//         bBatteryDisplay.setText(sample.toString());	
+    //         sample = bbIterator.next();
+    //     }
+    // }
+    
+    // private function setStepCountDisplay() {
+    // 	var stepCount = ActivityMonitor.getInfo().steps.toString();		
+	//     var stepCountDisplay = View.findDrawableById("StepCountDisplay");      
+	//     stepCountDisplay.setText(stepCount);		
+    // }
 
-    // Terminate any active timers and prepare for slow updates.
-    function onEnterSleep() as Void {
-    }
+    // private function setTimeToRecoverDisplay() {
+    // 	var timeToRecovery = ActivityMonitor.getInfo().timeToRecovery.toString(); //could be null
+    //     System.println("Sample: " + timeToRecovery); 
+    //     var timeToRecoveryDisplay = View.findDrawableById("TimeToRecoverDisplay");      
+	//     timeToRecoveryDisplay.setText(timeToRecovery);		
+    // }
 
 }
