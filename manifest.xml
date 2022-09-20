@@ -5,7 +5,7 @@
         Use "Monkey C: Edit Application" from the Visual Studio Code command palette
         to update the application attributes.
     -->
-  <iq:application id="4595d048-576d-44ca-8336-6bb7ebd3974f" type="watchface" name="@Strings.AppName" entry="BackgroundProgressApp" launcherIcon="@Drawables.LauncherIcon" minApiLevel="3.2.0">
+  <iq:application id="c80bec08-24d6-4497-b526-5a8424d4174b" type="watchface" name="@Strings.AppName" entry="BackgroundProgressApp" launcherIcon="@Drawables.LauncherIcon" minApiLevel="3.0.0">
     <!--
             Use the following from the Visual Studio Code comand palette to edit
             the build targets:
@@ -15,7 +15,6 @@
         -->
     <iq:products>
       <iq:product id="fenix6pro"/>
-      <iq:product id="vivoactive3m"/>
     </iq:products>
     <!--
             Use "Monkey C: Edit Permissions" from the Visual Studio Code command

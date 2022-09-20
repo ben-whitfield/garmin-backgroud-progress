@@ -21,6 +21,11 @@ class BackgroundProgressApp extends Application.AppBase {
         return [ new BackgroundProgressView() ] as Array<Views or InputDelegates>;
     }
 
+    // New app settings have been received so trigger a UI update
+    function onSettingsChanged() as Void {
+        WatchUi.requestUpdate();
+    }
+
 }
 
 function getApp() as BackgroundProgressApp {
