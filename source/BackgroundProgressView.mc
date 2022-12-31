@@ -3,6 +3,7 @@ import Toybox.Graphics;
 import Toybox.Lang;
 import Toybox.System;
 import Toybox.WatchUi;
+import Toybox.SensorHistory;
 
 class BackgroundProgressView extends WatchUi.WatchFace {
 
@@ -27,10 +28,8 @@ class BackgroundProgressView extends WatchUi.WatchFace {
         // Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);
         dc.clear();
-    	dc.setColor(Graphics.COLOR_WHITE,Graphics.COLOR_TRANSPARENT);
-    	dc.drawRectangle(50,50,14,14);
-    	dc.fillRectangle(50,100,14,14);
-        drawProgressCircle(dc);
+    	drawProgressCircle(dc);
+        setBodyBatteryValue();
         setTimeLabel();
     }
 
@@ -60,7 +59,7 @@ class BackgroundProgressView extends WatchUi.WatchFace {
 
     private function drawProgressCircle(dc) {
         dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_RED);
-        dc.fillRectangle(100, 100, 100, 100);
+        dc.fillCircle(getCentre(getScreenHeight(dc)), getCentre(getScreenWidth(dc)), 25);
     }
 
     private function setTimeLabel() {
@@ -83,24 +82,41 @@ class BackgroundProgressView extends WatchUi.WatchFace {
         // Update the view
         var view = View.findDrawableById("TimeLabel") as Text;
         view.setColor(getApp().getProperty("ForegroundColor") as Number);
+        // view.setColor(getValue("ForegroundColor" as Application.PropertyKeyType) as Application.PropertyValueType;
         view.setText(timeString);
+    }
+
+    private function getScreenHeight(dc) {
+        return dc.getHeight();
+    }
+    private function getScreenWidth(dc) {
+        return dc.getWidth();
+    }
+    private function getCentre(val) {
+        return val / 2;
+    }
+
+    private function setBodyBatteryValue() {
+        var bBatteryValue = getBodyBatteryValue();
+        var view = View.findDrawableById("BodyBatteryLabel") as Text;
+        view.setColor(getApp().getProperty("ForegroundColor") as Number);
+        view.setText(bBatteryValue.format("%d")+"%");
+    }
+
+    private function getBodyBatteryValue() {
+        // get the body battery iterator object
+        var bbIterator = getIterator();
+        var sample = bbIterator.next();
+        if (sample != null) {  
+    	    return sample.data;
+        }
+        return 0;
     }
 
     // private function setBatteryDisplay() {
     // 	var battery = System.getSystemStats().battery;				
 	//     var batteryDisplay = View.findDrawableById("BatteryDisplay");      
 	//     batteryDisplay.setText(battery.format("%d")+"%");	
-    // }
-
-    // private function setBodyBatteryDisplay() {
-    //     // get the body battery iterator object
-    //     var bbIterator = getIterator();
-    //     var sample = bbIterator.next();
-    //     while (sample != null) {  
-    // 	    var bBatteryDisplay = View.findDrawableById("BBatteryDisplay");      
-	//         bBatteryDisplay.setText(sample.toString());	
-    //         sample = bbIterator.next();
-    //     }
     // }
     
     // private function setStepCountDisplay() {
