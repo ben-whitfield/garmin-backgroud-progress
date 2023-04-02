@@ -1,7 +1,7 @@
 <layout id="WatchFace">
-    <drawable class="Background" />
-    <label id="TimeLabel" x="center" y="top" font="Graphics.FONT_LARGE" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_BLUE" />
-    <label id="BatteryLabel" text="00" x="left" y="center" font="Graphics.FONT_SMALL" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
-    <label id="StepCountLabel" text="00" x="right" y="center" font="Graphics.FONT_SMALL" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
-    <label id="BodyBatteryLabel" text="10" x="center" y="center" font="Graphics.FONT_LARGE" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_BLUE" />
+    <!-- <drawable-list id="IndicatorBg">
+        <shape type="rectangle" x="0" y="0" width="Width" height="Height" color="Graphics.COLOR_BLUE" />
+    </drawable-list> -->
+    <label id="TimeLabel" x="center" y="center" font="Graphics.FONT_LARGE" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_BLUE" />
+    <label id="BodyBatteryLabel" x="center" y="top" font="Graphics.FONT_SMALL" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_BLUE" />
 </layout>

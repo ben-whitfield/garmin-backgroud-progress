@@ -5,8 +5,10 @@ import Toybox.System;
 import Toybox.WatchUi;
 import Toybox.SensorHistory;
 
-class BackgroundProgressView extends WatchUi.WatchFace {
+typedef Numeric as Number or Float or Long or Double;
 
+class BackgroundProgressView extends WatchUi.WatchFace {
+    
     function initialize() {
         WatchFace.initialize();
     }
@@ -24,12 +26,24 @@ class BackgroundProgressView extends WatchUi.WatchFace {
 
     // Update the view
     function onUpdate(dc as Dc) as Void {
-        
+        // Get the device dimensions
+        var deviceHeight = getScreenHeight(dc);
+        var deviceWidth = getScreenWidth(dc);
         // Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);
         dc.clear();
-    	drawProgressCircle(dc);
-        setBodyBatteryValue();
+
+        // var backgroundLayer = new WatchUi.Layer({:x=>0, :y=>0, width=>260, height=>260});
+        // backgroundLayer.getDc().setColor(Graphics.COLOR_RED, Graphics.COLOR_BLACK);
+        // backgroundLayer.getDc().fillRectangle(25, 25, 25, 25);
+        // addLayer(backgroundLayer);
+
+        // var foregroundLayer = new WatchUi.Layer({:x=>0, :y=>0, width=>260, height=>260});
+        // backgroundLayer.getDc().setColor(Graphics.COLOR_BLUE, Graphics.COLOR_BLACK);
+        // backgroundLayer.getDc().fillRectangle(30, 30, 25, 25);
+        // addLayer(foregroundLayer);
+    	setBodyBatteryValue();
+        drawIndicator(dc, deviceHeight, deviceWidth);
         setTimeLabel();
     }
 
@@ -57,10 +71,7 @@ class BackgroundProgressView extends WatchUi.WatchFace {
         return null;
     }
 
-    private function drawProgressCircle(dc) {
-        dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_RED);
-        dc.fillCircle(getCentre(getScreenHeight(dc)), getCentre(getScreenWidth(dc)), 25);
-    }
+    
 
     private function setTimeLabel() {
         // Get the current time and format it correctly
@@ -82,27 +93,27 @@ class BackgroundProgressView extends WatchUi.WatchFace {
         // Update the view
         var view = View.findDrawableById("TimeLabel") as Text;
         view.setColor(getApp().getProperty("ForegroundColor") as Number);
-        // view.setColor(getValue("ForegroundColor" as Application.PropertyKeyType) as Application.PropertyValueType;
         view.setText(timeString);
     }
 
-    private function getScreenHeight(dc) {
-        return dc.getHeight();
-    }
-    private function getScreenWidth(dc) {
-        return dc.getWidth();
-    }
-    private function getCentre(val) {
-        return val / 2;
-    }
-
     private function setBodyBatteryValue() {
+        // Set the body battery value to placeholder
         var bBatteryValue = getBodyBatteryValue();
         var view = View.findDrawableById("BodyBatteryLabel") as Text;
         view.setColor(getApp().getProperty("ForegroundColor") as Number);
         view.setText(bBatteryValue.format("%d")+"%");
     }
 
+    private function drawIndicator(dc, deviceHeight, deviceWidth) {
+        // draw the indicator shape
+        System.println( "------draw--------" );
+        var bbatteryValue = getBodyBatteryValue();
+        var indicatorHeight = deviceHeight*(bbatteryValue/100);  
+        dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_BLACK);
+        dc.fillRectangle(0, indicatorHeight, deviceWidth, deviceHeight);
+    }
+
+    // Getters
     private function getBodyBatteryValue() {
         // get the body battery iterator object
         var bbIterator = getIterator();
@@ -112,6 +123,23 @@ class BackgroundProgressView extends WatchUi.WatchFace {
         }
         return 0;
     }
+    private function getScreenHeight(dc) {
+        return dc.getHeight();
+    }
+    private function getScreenWidth(dc) {
+        return dc.getWidth();
+    }
+    private function getCentre(val) {
+        return val / 2;
+    }
+    private function negateValue(val) {
+        return val - (val * 2);
+    }
+
+    // private function drawProgressCircle(dc) {
+    //     dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_RED);
+    //     dc.fillCircle(getCentre(getScreenHeight(dc)), getCentre(getScreenWidth(dc)), 25);
+    // }
 
     // private function setBatteryDisplay() {
     // 	var battery = System.getSystemStats().battery;				
